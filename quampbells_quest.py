@@ -1,11 +1,9 @@
 # Author: Gabby Schwalm
 import time
-import sys
 
 def print_dialogue(dialogue):
     for c in dialogue:
-        sys.stdout.write(c)
-        sys.stdout.flush()
+        print(c, end='', flush=True)
         time.sleep(0.05)
     print('')
 
